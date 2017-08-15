@@ -250,10 +250,7 @@
           if ( context.retina ) {
 
             context.save();
-            
-            if (context.autoclear) {
-              context.scale( ratio, ratio );
-            }
+            context.scale( ratio, ratio );
           }
 
           if ( context.autoclear )
@@ -306,7 +303,7 @@
 
         target.width = w + suffix;
 
-      if ( is2D && !context.autoclear && context.retina )
+      if ( is2D && !context.autoclear )
 
         context.scale( ratio, ratio );
 
